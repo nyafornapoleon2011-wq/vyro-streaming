@@ -19,7 +19,7 @@ main{padding:0 5vw 55px}.section{margin-top:36px}.section-head{display:flex;alig
 <body>
 <header class="nav">
   <a class="logo" href="#" aria-label="VYRO home">VYRO</a>
-  <nav class="navlinks"><a href="#home">Home</a><a href="#movies">Movies</a><a href="#series">Series</a><a href="#about">About</a></nav>
+  <nav class="navlinks"><a href="#home">Home</a><a href="#movies">Movies</a><a href="#football">Football</a><a href="#series">Series</a><a href="#about">About</a></nav>
   <div class="spacer"></div>
   <input id="search" class="search" type="search" placeholder="Search titles…" aria-label="Search titles">
   <button class="pill" onclick="document.getElementById('movies').scrollIntoView({behavior:'smooth'})">Explore</button>
@@ -28,11 +28,11 @@ main{padding:0 5vw 55px}.section{margin-top:36px}.section-head{display:flex;alig
   <div class="hero-content">
     <div class="eyebrow">Your next favourite starts here</div>
     <h1>Big stories.<br>Zero subscription.</h1>
-    <p>Discover movies, classic cinema and independent stories. VYRO is a free-streaming concept built to make great entertainment easier to find.</p>
+    <p>Discover films, series and football in one place. VYRO is being built to help you find entertainment without a subscription.</p>
     <div class="actions"><button class="pill" onclick="document.getElementById('movies').scrollIntoView({behavior:'smooth'})">▶ Explore the library</button><button class="secondary" onclick="showInfo()">How VYRO works</button></div>
   </div>
 </section>
-<div class="notice"><strong>Preview version:</strong> These are sample catalogue cards, not playable Hollywood titles yet. Before publishing films, add only videos you own or have permission to stream and download. Free-to-watch does not automatically mean free to redistribute.</div>
+<div class="notice"><strong>Preview version:</strong> These are sample catalogue cards, not playable movies yet. Before publishing films, add only videos you own or have permission to stream and download. Free-to-watch does not automatically mean free to redistribute.</div>
 <main>
   <section class="section" id="movies">
     <div class="section-head"><h2>Featured movies</h2><small id="count">8 titles</small></div>
@@ -47,6 +47,15 @@ main{padding:0 5vw 55px}.section{margin-top:36px}.section-head{display:flex;alig
       <article class="movie" data-title="Riverlight" data-tags="family drama series"><div class="poster p8"><span>RIVER<br>LIGHT</span></div><div class="details"><h3>Riverlight</h3><div class="meta">Family · Sample title</div><button class="watch" onclick="openTitle('Riverlight')">View details</button></div></article>
     </div>
     <p class="empty" id="empty">No titles match that search. Try another word.</p>
+  </section>
+  <section class="section" id="football">
+    <div class="section-head"><h2>Football on VYRO</h2><small>Fixtures · Scores · Official streams</small></div>
+    <div class="how">
+      <article><span>⚽</span><b>Match schedules</b><p>Show upcoming fixtures and kickoff times once connected to a reliable fixtures source.</p></article>
+      <article><span>📊</span><b>Live scores</b><p>Display current scores using a permitted data source. These demo cards are not live scores.</p></article>
+      <article><span>▶️</span><b>Watch officially</b><p>Link to an authorized broadcaster or a free official stream when one is available in the viewer’s country.</p></article>
+    </div>
+    <div class="notice" style="margin:16px 0 0"><strong>Football preview:</strong> No live match is being streamed here yet. VYRO will only link to broadcasts it is allowed to show.</div>
   </section>
   <section class="section" id="series">
     <div class="section-head"><h2>Coming soon</h2><small>Series · Collections · Watchlist</small></div>
